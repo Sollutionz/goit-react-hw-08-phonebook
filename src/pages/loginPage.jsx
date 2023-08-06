@@ -6,6 +6,7 @@ import { logInThunk } from 'store/auth/thunk';
 import { useEffect } from 'react';
 import { selectIsAuth } from 'store/auth/selector';
 
+
 export const LoginPage = () => {
   const isAuth = useSelector(selectIsAuth);
   const dispatch = useDispatch();
@@ -30,33 +31,33 @@ export const LoginPage = () => {
   return (
     <>
       <form className={css.container} onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label htmlFor="exampleInputEmail1" className="form-label">
+        <div className={css.mb3}>
+          <label htmlFor="exampleInputEmail1" className={css.formlabel}>
             Email address
           </label>
           <input
             type="email"
             name="email"
-            className="form-control"
+            className={css.formcontrol}
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
           />
-          <div id="emailHelp" className="form-text">
+          <div id="emailHelp" className={css.formtex}>
             We'll never share your email with anyone else.
           </div>
         </div>
-        <div className="mb-3">
-          <label htmlFor="exampleInputPassword1" className="form-label">
+        <div className={css.mb3}>
+          <label htmlFor="exampleInputPassword1" className={css.formlabel}>
             Password
           </label>
           <input
             type="password"
             name="password"
-            className="form-control"
+            className={css.formcontrol}
             id="exampleInputPassword1"
           />
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className={css.btnprimary}>
           Submit
         </button>
       </form>
