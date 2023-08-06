@@ -1,0 +1,22 @@
+.item{
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.deleteButton{
+    display: flex;
+    padding: 10px;
+    border: 0px;
+    border-radius: 8px;
+    margin-left: auto;
+    color: dimgray;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.deleteButton:hover{
+    background-color: lightcoral;
+    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1), 1000ms;
+}

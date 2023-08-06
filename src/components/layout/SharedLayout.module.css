@@ -1,0 +1,42 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+
+  min-height: 64px;
+  padding: 10px 30px;
+
+  background-color: #e7f1b683;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.label {
+  font-size: 36px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  text-decoration: none;
+}
+.link {
+  border: 1px solid lavenderblush;
+  font-size: 24px;
+  border-radius: 10px;
+  margin: 5px;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
+.main {
+  min-height: 85vh;
+  box-sizing: border-box;
+  background-color: #e7f1b683;
+  height: 100%;
+  overflow-y: hidden;
+}
