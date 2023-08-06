@@ -1,6 +1,8 @@
 .container{
     display: flex;
     position: absolute;
+    align-items: center;
+    justify-content: center;
     top: 0;
     right:0;
     margin-right: 20px;
@@ -8,7 +10,8 @@
 }
 
 .email{
-    font-size: 24px;
+    margin-top: 0;
+    font-size: 21px;
     margin-right: 20px;
 }
 
